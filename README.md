@@ -1,2 +1,2 @@
 # Resume
-Currently building my Resume with LaTex.
+My Resume in Catalan written with LaTex.
