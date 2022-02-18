@@ -1,0 +1,154 @@
+
+\documentclass[12pt, oneside, a4paper, titlepage]{article}
+
+\usepackage{comment}
+\usepackage{subfiles}
+\usepackage[most]{tcolorbox}
+\usepackage{sectsty}
+\usepackage{hyperref}
+
+
+\sectionfont{\fontsize{12}{15}\selectfont}
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left =0cm,
+    right=0cm,
+    top=0cm,
+    bottom=1.75cm
+    }
+    
+%\definecolor{myCV}{RGB}{142,180,227}
+\definecolor{myCV}{RGB}{116,162,220}
+%\definecolor{myCV2}{RGB}{76,131,194}
+\definecolor{myCV2}{RGB}{60,113,175}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=myCV2
+}
+
+\title{AlbaTalayaVidal}
+\date{}
+
+\begin{document}
+
+    \subfile{sections/00.name}
+    
+    \tcbset{colframe=white, colback=white, arc=0mm}
+    \begin{tcolorbox}
+    
+%DADES
+        \begin{minipage}[t]{8cm}
+            \vspace*{-0.5cm}
+            \begin{tcolorbox}[grow to left by=0.6cm,colback=myCV,colframe=myCV]
+                \vspace*{0.75cm}
+                
+                \subfile{sections/0.photo}
+                \subfile{sections/1.personalData}
+                \subfile{sections/2.address}                  
+                \subfile{sections/3.contact}           
+                \subfile{sections/4.car} 
+                \subfile{sections/5.more} 
+                \subfile{sections/6.languages}      
+                
+                \vspace*{0.75cm}
+            \end{tcolorbox}
+        \end{minipage}
+        \begin{minipage}[t]{11cm}
+        
+%INFORMACIÓ
+        \vspace*{-0.5cm}
+            \begin{tcolorbox}[grow to right by=0.75cm,colframe=white,colback=white]
+            
+            \subfile{sections/7.education}
+            \subfile{sections/8.otherQualifications}
+            \subfile{sections/9.experience}
+
+            \end{tcolorbox}
+        \end{minipage}
+        
+    \end{tcolorbox}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+    \begin{tcolorbox}[colback=myCV]
+        \subfile{sections/10.header}
+    \end{tcolorbox}
+
+    \begin{tcolorbox}[colback=white]
+        \hspace*{0.75cm}
+        \begin{minipage}[t]{18.5cm}
+
+            \vspace*{0.5cm}
+            \subfile{sections/11.projects}
+                
+            \begin{minipage}[t]{9.25cm}
+                \subfile{sections/12.technicalSkills}
+            \end{minipage}
+            \begin{minipage}[t]{9.25cm}
+                \subfile{sections/13.qualities}
+            \end{minipage}
+
+            
+            \subfile{sections/14.others}
+        \end{minipage}
+    \end{tcolorbox}
+
+\begin{comment}
+
+    \subfile{sections/nom}
+
+    \tcbset{colframe=white, colback=white, arc=0mm}
+    \begin{tcolorbox}
+    
+%DADES
+        \begin{minipage}[t]{8cm}
+            \vspace*{-0.5cm}
+            \begin{tcolorbox}[grow to left by=0.6cm,colback=myCV,colframe=myCV]
+                \vspace*{0.75cm}
+                
+                \subfile{sections/foto}
+                \subfile{sections/dadesPersonals}
+                \subfile{sections/direccio}                  
+                \subfile{sections/contacte}           
+                \subfile{sections/cotxe} 
+                \subfile{sections/github} 
+                \subfile{sections/qualitats}      
+                
+                \vspace*{0.75cm}
+            \end{tcolorbox}
+        \end{minipage}
+        \begin{minipage}[t]{11cm}
+        
+%INFORMACIÓ
+            \vspace*{-0.5cm}
+            \begin{tcolorbox}[grow to right by=0.75cm,colframe=white,colback=white]
+            
+            \subfile{sections/projectes}
+            \subfile{sections/aptitudsTecniques}
+            \subfile{sections/altres}
+
+            \end{tcolorbox}
+        \end{minipage}
+        
+    \end{tcolorbox}
+
+\end{comment}
+
+\end{document}
+
+

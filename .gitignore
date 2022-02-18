@@ -7,4 +7,6 @@
 *.out
 *.gz
 *.gz
-sections/*.pdf
+Catalan/sections/*.pdf
+Spanish/sections/*.pdf
+English/sections/*.pdf
